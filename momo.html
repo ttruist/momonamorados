@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para o amor da minha vida</title>
+
+  <!-- Fontes e Estilos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff0f5;
+      color: #333;
+    }
+
+    /* Carrossel no Header */
+    .swiper {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
+    .swiper-slide img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+      z-index: 10;
+    }
+    .overlay h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+    }
+    .overlay p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    /* Cards */
+    section.cards {
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card p {
+      padding: 15px;
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-style: italic;
+      background: #ffe6f0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Música de fundo -->
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-moose.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <!-- Header com carrossel -->
+  <header class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://source.unsplash.com/1600x900/?couple,1" alt="Foto 1"></div>
+      <div class="swiper-slide"><img src="https://source.unsplash.com/1600x900/?love,2" alt="Foto 2"></div>
+      <div class="swiper-slide"><img src="https://source.unsplash.com/1600x900/?romantic,3" alt="Foto 3"></div>
+      <!-- Substitua pelos links das suas fotos -->
+    </div>
+    <div class="overlay">
+      <h1>Para o amor da minha vida</h1>
+      <p>Morena 💖</p>
+    </div>
+  </header>
+
+  <!-- Cartões com declarações -->
+  <section class="cards">
+    <div class="card" data-aos="fade-up">
+      <img src="https://source.unsplash.com/400x300/?love,1" alt="Foto 1">
+      <p>Desde que te conheci, tudo mudou pra melhor.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
+      <img src="momosorrindo.gif" alt="Foto 2">
+      <p>Seu sorriso é meu lugar favorito.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
+      <img src="momofalando.gif" alt="Foto 3">
+      <p>Você é o meu porto seguro.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="300">
+      <img src="maoemmomo.gif" alt="Foto 4">
+      <p>A vida ao seu lado é uma aventura incrível.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="400">
+      <img src="momofofinhalingua.gif" alt="Foto 5">
+      <p>Te amo mais a cada dia.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="500">
+      <img src="momobebenoagua.gif" alt="Foto 6">
+      <p>Com você, até o silêncio é confortável.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="600">
+      <img src="https://source.unsplash.com/400x300/?love,7" alt="Foto 7">
+      <p>Você me completa de um jeito único.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="700">
+      <img src="https://source.unsplash.com/400x300/?love,8" alt="Foto 8">
+      <p>Feliz Dia dos Namorados, minha Morena! 💘</p>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    Com todo o meu amor, William 💌
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+    const swiper = new Swiper('.mySwiper', {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      speed: 1000,
+      effect: 'fade',
+    });
+  </script>
+</body>
+</html>
